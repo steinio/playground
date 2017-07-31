@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="{{ site.keywords }}">
+    <meta name="author" content="{{ site.author }}">
+
+    <title>Web Simulator for IARC Mission 7</title>
+    <script src="websim.js"></script>
+    <style>
+    body {
+        background-color: #0a0a0a;
+        color: #ffffff;
+        font-family: monospace;
+    }
+
+    a {
+        color: #3194d5;
+    }
+
+    #info { padding: 10px; text-align: center; }
+    #container { text-align: center; }
+    #copyright { padding: 10px; text-align: center; }
+    </style>
+</head>
+<body onload="run()">
+    <p style="text-align: center;">IARC Mission 7 Web Simulator</p>
+    <div id="container"><canvas id="canvas" width="500" height="500">
+        Your browser doesn't appear to support the HTML5 canvas :(
+    </canvas></div>
+    <p style="text-align: center;">Controls: Arrow keys, z, x</p>
+</body>
+</html>
